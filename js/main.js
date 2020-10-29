@@ -229,10 +229,7 @@ function openGoods(event) {
       getData(`./db/${restaurant.dataset.products}`).then(data => {
         data.forEach(createCardGood)
         createSectionHeading(restaurant.dataset.name, restaurant.dataset.price, restaurant.dataset.stars, restaurant.dataset.kitchen)
-
       })
-
-
     }
   } else {
     toogleModalAuth()
